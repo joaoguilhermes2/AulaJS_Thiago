@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Zoológico Fábrica 32</title>
+</head>
+<body>
+    <div id="header" onmouseover="func2()" onmouseout="func1()">
+        <h1>Quintou quase Sexta!!!</h1>
+        <h3>Cadastro de Animais</h3>
+    </div>
+
+    <div>
+        <form id="formulario" class="form-cad" method="POST">
+            <label for="email">Email: </label>
+            <br>
+            <input type="text" id="email" name="email" placeholder="Login">
+            <br>
+            <label for="senha">Senha: </label>
+            <br>
+            <input type="password" id="senha" name="senha" placeholder="Senha">
+            <br>
+            <label for="conf-senha">Confirma Senha: </label>
+            <br>
+            <input type="password" id="confsenha" name="confsenha" placeholder="Senha">
+            <br>
+            <input type="submit" name="cad" id="cad" value="Cadastrar" onclick="valida(event)">
+        </form>
+    </div>
+
+    <div>
+        <span id="texto"></span>
+    </div>
+</body>
+</html>
